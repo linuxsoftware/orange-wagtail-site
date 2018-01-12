@@ -1,0 +1,66 @@
+/*-----------------------------------------------------------------------*/
+/* Home page */
+/*-----------------------------------------------------------------------*/
+
+#banner {
+}
+#welcome {
+    padding:               20px 10px;
+    margin:                0 20px 0 50px;
+    font-size:             24px;
+    line-height:           24px;
+    color:                 #c65000;
+}
+#highlights {
+    padding:               50px 20px 25px 50px;
+    margin:                0;
+    min-height:            400px;
+    text-align:            center;
+}
+#highlights .highlight {
+    padding:               0;
+    margin:                0px 30px 30px 0 ;
+    display:               inline-block;
+    width:                 360px;
+    height:                285px;
+    background:            #ffc764;   
+    border-radius:         10px;
+    overflow:              hidden;
+    box-shadow:            0 4px 10px rgba(150, 150, 150, 0.2);
+    text-align:            left;
+
+}
+a.highlight:visited,
+a.highlight:hover,
+a.highlight:active,
+a.highlight {
+    color:                 #ff6600;
+    text-decoration:       none;
+    outline:               0;
+}
+a.highlight:hover h2 {
+    text-decoration:       underline;
+}
+a.highlight:active h2 {
+    color:                 #ffc764;
+    background-color:      #ff6600;
+    text-decoration:       underline;
+}
+.highlight h2 {
+    font-size:             40px;
+    line-height:           40px;
+    margin-bottom:         10px;
+}
+#highlights .highlight-details {
+    padding:               20px 15px 10px 20px;
+    margin:                0;
+    font-size:             30px;
+    line-height:           30px;
+}
+
+#main-info {
+    padding:               30px 20px 30px 60px;
+    margin:                0;
+}
+#main-info .info-inner {
+}

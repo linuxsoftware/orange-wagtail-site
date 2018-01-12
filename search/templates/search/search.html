@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags %}
+
+{% block body_class %}template-searchresults{% endblock %}
+
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+<div class="content">
+  <h1>Search Results</h1>
+
+  <div class="content-inner">
+  {% if search_results %}
+    <ul>
+      {% for result in search_results %}
+        <li>
+          <a class="search-title" href="{% pageurl result %}">{{ result }}</a>
+          {% if result.search_description %}
+            {{ result.search_description|safe }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% if search_results.has_previous %}
+      <a href="{% url 'search' %}?query={{ search_query|urlencode }}&amp;page={{ search_results.previous_page_number }}">Previous</a>
+    {% endif %}
+
+    {% if search_results.has_next %}
+      <a href="{% url 'search' %}?query={{ search_query|urlencode }}&amp;page={{ search_results.next_page_number }}">Next</a>
+    {% endif %}
+  {% elif search_query %}
+    No results found
+  {% endif %}
+  </div>
+</div>
+{% endblock %}

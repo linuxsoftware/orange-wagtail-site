@@ -1,0 +1,9 @@
+{% load website_tags static %}
+{% get_by_url_path "/home/contact-us/" as contact_us %}
+{% if contact_us %}
+<div class="contact-us-link">
+  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+  <a href="{{ contact_us.url }}">Contact Us</a>
+</div>
+{% endif %}
+

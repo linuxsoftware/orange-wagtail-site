@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% block extra_css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block top_details %}
+  <div class="top-details">
+    {% include "includes/search_box.html" %}
+  </div>
+{% endblock top_details %}
+
+{% block content %}
+  <section id="banner" class="clearfix">
+    <section id="welcome">
+      {{ self.welcome|richtext }}
+    </section>
+  </section>
+  <section id="highlights">
+<!-- 
+    {% for highlight in self.highlights.all %}
+      {% if highlight.page %}
+        --><a href="{{ highlight.page.url }}" class="highlight">
+          {% include "home/includes/highlight.html" %}
+        </a><!--
+      {% else %}
+        --><div class="highlight">
+          {% include "home/includes/highlight.html" %}
+        </div><!--
+      {% endif %}
+    {% endfor %} 
+-->
+  </section>
+  <section id="main-info" class="clearfix">
+    <div class="info-inner">
+      {{ self.content|richtext }}
+    </div>
+  </section>
+
+{% endblock %}
+
+{% block extra_js %}
+
+{% endblock %}

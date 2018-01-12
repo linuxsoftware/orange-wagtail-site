@@ -1,0 +1,13 @@
+{% load wagtailcore_tags %}
+{% if pages %}
+<div class="page-index">
+  {% for page in pages %}
+  <a class="item" href="{% pageurl page %}">
+    <div class="item-heading">{{ page.title }}</div>
+      {% if page.search_description %}
+      <p class="item-text">{{ page.search_description }}</p>
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>
+{% endif %}

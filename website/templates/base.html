@@ -1,0 +1,101 @@
+{% load website_tags static wagtailuserbar %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>
+            {% block title %}
+                {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
+            {% endblock %}
+            {% block title_suffix %}
+                {% with self.get_site.site_name as site_name %}
+                    {% if site_name %}- {{ site_name }}{% endif %}
+                {% endwith %}
+            {% endblock %}
+        </title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {# Global stylesheets #}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/website.css' %}">
+
+        {% block extra_css %}
+            {# Override this in templates to add extra stylesheets #}
+        {% endblock %}
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}">
+        {% wagtailuserbar %}
+
+        <div id="wrapper">
+          {% block background %}
+          {% endblock background %}
+
+          {% block header %}
+          <header >
+            {% block contact_us %}
+            {% include "includes/contact_us.html" %}
+            {% endblock contact_us %}
+
+            {% block search_box %}
+            {% include "includes/search_box.html" %}
+            {% endblock search_box %}
+
+            {% block banner %}
+            <div class="banner clearfix">
+              <a class="img-link" href="/"><img class="logo" src="{% static 'img/logo_250x160.png' %}" alt="Demo Site" /></a>
+              <h2 class="subtitle">Yet another demonstration Wagtail website</h2>
+            </div>
+            {% endblock banner %}
+
+            {% block top_menu %}
+            {% website_menu %}
+            {% endblock top_menu %}
+          </header>
+          {% endblock header %}
+
+          {% block main %}
+          <main id="main">
+            {% block content %}
+            {% endblock %}
+          </main>
+          {% endblock main %}
+        </div> <!-- wrapper -->
+
+        {% block footer %}
+        <footer>
+          <div class="back-to-top">
+            <a href="#wrapper" class="img-link"><img src="{% static 'img/chick6_45x52.png' %}" alt="" />Back to Top</a>
+          </div>
+          <div class="bottom clearfix">
+            <div class="bottom-left">
+              <div class="login">
+               <a class="img-link" href="/admin/login/"><img src="{% static 'img/chick4_45x60.png' %}" alt="" />Login</a>
+              </div>
+              <div class="site-by">
+              </div>
+              <div class="powered-by">
+              </div>
+            </div>
+            {% site_map %}
+          </div>
+          <div class="copyright">
+          </div>
+        </footer>
+        {% endblock footer %}
+
+        {# Global javascript #}
+        <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'js/vendor/ie10-viewport-bug-workaround.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/demo.js' %}"></script>
+
+        {% block extra_js %}
+            {# Override this in templates to add extra javascript #}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,8 @@
+{% load wagtailcore_tags %}
+<nav class="top-menu">
+    <a class="menu-item {% if home.current %} current{% endif %}" href="{{ home.url }}">{{ home.title }}</a><!--
+  {% for menuitem in menuitems %}
+  --><a class="menu-item {% if menuitem.current %} current{% endif %}" href="{{ menuitem.url }}">{{ menuitem.title }}</a><!--
+  {% endfor menuitem %}
+-->
+</nav>

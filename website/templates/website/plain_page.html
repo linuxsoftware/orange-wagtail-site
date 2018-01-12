@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static website_tags wagtailcore_tags %}
+
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+<div class="content">
+  <div class="content-inner">
+    {{ self.content|richtext }}
+  </div>
+
+  {% standard_index_listing calling_page=self %}
+</div>
+{% endblock %}
+
+
