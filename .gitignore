@@ -20,4 +20,5 @@ data/
 .webassets-cache
 __pycache__/
 scratch/
-media/
+/media/
+/static/
