@@ -1,0 +1,96 @@
+{% extends "wagtailadmin/login.html" %}
+{% load staticfiles i18n dashboard_tags %}
+
+{% block extra_css %}
+    {{ block.super }}
+
+    <style>
+        .login-hint {
+            font-family: Open Sans,Arial,sans-serif;
+            font-size: 1.2em;
+        }
+        .login-hint code {
+            background-color: inherit;
+        }
+    </style>
+{% endblock %}
+
+{% block furniture %}
+    <div class="content-wrapper">
+        {% if messages or form.errors %}
+            <div class="messages">
+                <ul>
+                    {% if form.errors %}
+                        <li class="error">{% blocktrans %}Your {{ username_field }} and password didn't match. Please try again.{% endblocktrans %}</li>
+                    {% endif %}
+                    {% for message in messages %}
+                        <li class="{{ message.tags }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {% block above_login %}{% endblock %}
+
+        <form action="{% url 'wagtailadmin_login' %}" method="post" autocomplete="off" novalidate>
+            {% block login_form %}
+            {% csrf_token %}
+
+            {% url 'wagtailadmin_home' as home_url %}
+            <input type="hidden" name="next" value="{{ next|default:home_url }}" />
+
+            <h1>
+                {% block branding_login %}
+                {% get_wagtail_site_name as wagtail_site_name %}
+                    Sign in to the {{ wagtail_site_name }} Website
+                {% endblock %}
+            </h1>
+
+            <p class="login-hint"><b>Hint:</b> <code>demo</code> / <code>demo</code></p>
+
+            <ul class="fields">
+                {% block fields %}
+                <li class="full">
+                    <div class="field iconfield">
+                        {{ form.username.label_tag }}
+                        <div class="input icon-user">
+                            {{ form.username }}
+                        </div>
+                    </div>
+                </li>
+                <li class="full">
+                    <div class="field iconfield">
+                        {{ form.password.label_tag }}
+                        <div class="input icon-password">
+                            {{ form.password }}
+                        </div>
+                    </div>
+                    {% if show_password_reset %}
+                        <p class="help"><a href="{% url 'wagtailadmin_password_reset' %}">{% trans "Forgotten it?" %}</a></p>
+                    {% endif %}
+                </li>
+                {% comment %}
+                    Removed until functionality exists
+                    <li class="checkbox">
+                        <div class="field">
+                            <label><input type="checkbox" />{% trans "Remember me" %}</label>
+                        </div>
+                    </li>
+                {% endcomment %}
+                {% endblock %}
+                <li class="submit">
+                    {% block submit_buttons %}
+                    <button type="submit" class="button button-longrunning" tabindex="3" data-clicked-text="{% trans 'Signing in...' %}"><span class="icon icon-spinner"></span><em>{% trans 'Sign in' %}</em></button>
+                    {% endblock %}
+                </li>
+            </ul>
+        {% endblock %}
+        </form>
+
+        {% block below_login %}{% endblock %}
+
+    </div>
+{% endblock %}
+
+
+

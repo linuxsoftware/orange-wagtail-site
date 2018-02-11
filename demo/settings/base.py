@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'search',
     'events',
     'website',
+    'dashboard',
 
     'ls.joyous',
     'wagtail.contrib.modeladmin',
