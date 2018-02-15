@@ -2,3 +2,4 @@ Django>=1.11,<1.12
 wagtail>=1.13,<1.14
 psycopg2-binary
 -e git://github.com/linuxsoftware/ls.joyous.git#egg=ls.joyous
+#-e /home/djm/linuxsoftware/ls.joyous

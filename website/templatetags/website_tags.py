@@ -10,11 +10,11 @@ register = template.Library()
 
 
 # settings value
-@register.assignment_tag
+@register.simple_tag
 def get_google_maps_key():
     return getattr(settings, 'GOOGLE_MAPS_KEY', "")
 
-@register.assignment_tag(takes_context=True)
+@register.simple_tag(takes_context=True)
 def get_default_site(context):
     # Only one site can have the is_default_site flag set
     try:
@@ -23,15 +23,15 @@ def get_default_site(context):
         default = context.request.site
     return default
 
-@register.assignment_tag
+@register.simple_tag
 def get_by_url_path(x):
     return Page.objects.filter(url_path=x).live().public().first()
 
-@register.assignment_tag
+@register.simple_tag
 def get_by_slug(x):
     return Page.objects.filter(slug=x).live().public().first()
 
-# @register.assignment_tag(takes_context=True)
+# @register.simple_tag(takes_context=True)
 # def get_site_root(context):
 #     # NB this returns a core.Page, not the implementation-specific model used
 #     # so object-comparison to self will return false as objects would differ
