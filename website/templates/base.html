@@ -20,10 +20,10 @@
         </title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        {% block global_css %}
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/website.css' %}">
-
+        {% endblock %}
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}

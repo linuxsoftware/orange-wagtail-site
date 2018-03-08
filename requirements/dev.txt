@@ -1,0 +1,4 @@
+Django>=2.0,<2.1
+wagtail>=2.0,<2.1
+psycopg2-binary
+-e git://github.com/linuxsoftware/ls.joyous.git#egg=ls.joyous

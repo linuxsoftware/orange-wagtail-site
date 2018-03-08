@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 from django.db import migrations, models
 import django.db.models.deletion
-import wagtail.wagtailcore.fields
+import wagtail.core.fields
 
 
 class Migration(migrations.Migration):
@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
             name='PlainPage',
             fields=[
                 ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.Page')),
-                ('content', wagtail.wagtailcore.fields.RichTextField(blank=True, default='', help_text='An area of text for whatever you like')),
+                ('content', wagtail.core.fields.RichTextField(blank=True, default='', help_text='An area of text for whatever you like')),
             ],
             options={
                 'verbose_name': 'Plain Text Page',

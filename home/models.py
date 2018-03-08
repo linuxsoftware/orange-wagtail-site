@@ -3,21 +3,22 @@
 # ------------------------------------------------------------------------------
 
 from django.db import models
-
-from wagtail.wagtailcore.models import Page, Orderable
-from wagtail.wagtailcore.fields import RichTextField
-from wagtail.wagtailadmin.edit_handlers import FieldPanel, MultiFieldPanel, \
+from wagtail.core.models import Page, Orderable
+from wagtail.core.fields import RichTextField
+from wagtail.admin.edit_handlers import FieldPanel, MultiFieldPanel, \
     InlinePanel, PageChooserPanel
 from modelcluster.fields import ParentalKey
 
 
 class HomePageHighlight(Orderable):
-    homepage = ParentalKey('home.HomePage', related_name='highlights')
+    homepage = ParentalKey('home.HomePage',
+                           on_delete=models.CASCADE,
+                           related_name='highlights')
     title = models.CharField("Title", max_length=80, blank=True)
     blurb = RichTextField(default='', blank=True)
     page  = models.ForeignKey('wagtailcore.Page',
-                              null=True,
-                              blank=True,
+                              null=True, blank=True,
+                              on_delete=models.CASCADE,
                               related_name='+')
 
     panels = [FieldPanel('title', classname="full title"),

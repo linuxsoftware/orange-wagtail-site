@@ -4,7 +4,7 @@ from django import template
 from django.conf import settings
 from django.template.loader import render_to_string
 #from website.models import WebImage
-from wagtail.wagtailcore.models import Site, Page
+from wagtail.core.models import Site, Page
 
 register = template.Library()
 

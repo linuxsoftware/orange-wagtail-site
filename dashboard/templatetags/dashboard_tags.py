@@ -1,6 +1,6 @@
 from django import template
 from django.conf import settings
-from wagtail.wagtailadmin.templatetags.wagtailadmin_tags import menu_search
+from wagtail.admin.templatetags.wagtailadmin_tags import menu_search
 
 register = template.Library()
 
