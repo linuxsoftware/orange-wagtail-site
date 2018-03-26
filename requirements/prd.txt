@@ -8,21 +8,21 @@ Django==2.0.3
 django-modelcluster==4.1
 django-multiselectfield==0.1.8
 django-taggit==0.22.2
-django-treebeard==4.2.0
+django-treebeard==4.2.1
 djangorestframework==3.7.7
 draftjs-exporter==2.0.0
-holidays==0.9.3
+holidays==0.9.4
 html5lib==0.999999999
 idna==2.6
 inflect==0.2.5
 keyring==10.6.0
--e git://github.com/linuxsoftware/ls.joyous.git@v0.1.2#egg=ls.joyous
+ls.joyous==0.1.6
 olefile==0.45.1
 Pillow==4.3.0
 pkginfo==1.4.1
 psycopg2-binary==2.7.4
 pycparser==2.18
-python-dateutil==2.6.1
+python-dateutil==2.7.1
 pytz==2018.3
 requests==2.18.4
 requests-toolbelt==0.8.0
