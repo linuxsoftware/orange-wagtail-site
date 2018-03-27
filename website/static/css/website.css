@@ -386,43 +386,6 @@ b {
     display:               inline-block;
 }
 
-#overlay {
-    position:              fixed;
-    top:                   0;
-    left:                  0;
-    width:                 100%;
-    height:                100%;
-    background:            #121524;
-    opacity:                .75;
-    filter:    alpha(opacity=75);
-    z-index:               2;
-}
-
-.popup-outer {
-    position:              fixed;
-    top:                   50px;
-    left:                  0;
-    width:                 100%;
-    padding-bottom:        15px;
-    z-index:               3;
-}
-.popup {
-    position:              relative;
-    padding:               10px 20px 50px 20px;
-    background:            ghostwhite;
-    width:                 400px;
-    margin:                50px auto 10px auto;
-    border:                2px solid #c13100;
-}
-.popup .close {
-    position:              absolute;
-    top:                   5px;
-    right:                 20px;
-    line-height:           20px;
-    text-decoration:       none;
-    outline:               0;
-}
-
 /*-----------------------------------------------------------------------*/
 /* Plain Tables and Lists */
 /*-----------------------------------------------------------------------*/
