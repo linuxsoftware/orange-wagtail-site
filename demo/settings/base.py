@@ -108,7 +108,8 @@ WSGI_APPLICATION = 'demo.wsgi.application'
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en-gb'
+FORMAT_MODULE_PATH = "demo.formats"
+LANGUAGE_CODE = 'en-NZ'
 TIME_ZONE = 'Pacific/Auckland'
 USE_I18N = True
 USE_L10N = True
