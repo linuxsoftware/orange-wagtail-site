@@ -574,4 +574,26 @@ a.ticket:active h3 {
 }
 
 
+/*-----------------------------------------------------------------------*/
+/* Event Index */
+/*-----------------------------------------------------------------------*/
+
+.event-index {
+    border-top:            1px solid #cc6600;
+}
+.event-index a,
+.event-index a:link,
+.event-index a:hover,
+.event-index a:active,
+.event-index a:visited  {
+    color: #cc6600;
+    background-color:      transparent;
+}
+.event-index a:hover .item-heading  {
+    color: #cc6600;
+}
+.event-index a:active .item-heading  {
+    color:                 white;
+    background-color:      #cc6600;
+}
 
