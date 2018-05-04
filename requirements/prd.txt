@@ -17,7 +17,7 @@ html5lib==0.999999999
 idna==2.6
 inflect==0.2.5
 keyring==10.6.0
-ls.joyous==0.2.2
+ls.joyous==0.2.3
 olefile==0.45.1
 Pillow==4.3.0
 pkginfo==1.4.1
