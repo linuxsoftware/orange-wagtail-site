@@ -69,6 +69,8 @@ MIDDLEWARE = [
 
     'wagtail.core.middleware.SiteMiddleware',
     'wagtail.contrib.redirects.middleware.RedirectMiddleware',
+
+    'ls.joyous.middleware.UserTimeZoneMiddleware',
 ]
 
 ROOT_URLCONF = 'demo.urls'
