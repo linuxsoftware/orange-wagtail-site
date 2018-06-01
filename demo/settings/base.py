@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
     'ls.joyous',
     'wagtail.contrib.modeladmin',
+    'wagtail.contrib.postgres_search',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -129,14 +130,21 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, 'static'),
 ]
 
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-# Wagtail settings
 WAGTAIL_SITE_NAME = "Demo"
+
+WAGTAILSEARCH_BACKENDS = {
+    'default': {
+        'BACKEND': 'wagtail.contrib.postgres_search.backend',
+        'SEARCH_CONFIG': 'english',
+    }
+}
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
