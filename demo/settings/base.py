@@ -154,3 +154,4 @@ ALLOWED_HOSTS = ['demo.linuxsoftware.nz', '.localhost', '127.0.0.1', '[::1]']
 
 JOYOUS_HOLIDAYS = "NZ[*]"
 JOYOUS_GROUP_SELECTABLE = True
+JOYOUS_TIME_INPUT = 12
