@@ -80,6 +80,12 @@ proj.directory-list = [{'dirloc': loc('dashboard'),
                         'filter': u'*',
                         'include_hidden': False,
                         'recursive': True,
+                        'watch_for_changes': True},
+                       {'dirloc': loc('../../env/demo/lib/python3.5/site-packages/dateutil'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
                         'watch_for_changes': True}]
 proj.file-list = [loc('manage.py')]
 proj.file-type = 'shared'
