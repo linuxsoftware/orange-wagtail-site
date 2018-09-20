@@ -1,3 +1,4 @@
+pip
 Django>=2.0,<2.1
 wagtail>=2.2,<2.3
 psycopg2-binary
