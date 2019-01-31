@@ -2,7 +2,7 @@ pip
 beautifulsoup4==4.6.0
 certifi==2018.4.16
 chardet==3.0.4
-Django==2.1.4
+Django==2.1.5
 django-modelcluster==4.3
 django-taggit==0.23.0
 django-timezone-field==2.1
@@ -17,7 +17,7 @@ inflect==0.3.1
 l18n==2016.6.4
 ls.joyous==0.6.5
 Pillow==5.1.0
-psycopg2-binary==2.7.6.1
+psycopg2-binary==2.7.7
 python-dateutil==2.7.3
 pytz==2018.4
 requests==2.18.4
