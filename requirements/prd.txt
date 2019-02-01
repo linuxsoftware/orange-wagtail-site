@@ -15,7 +15,7 @@ icalendar==4.0.2
 idna==2.6
 inflect==0.3.1
 l18n==2016.6.4
-ls.joyous==0.7.0
+ls.joyous==0.7.1
 Pillow==5.1.0
 psycopg2-binary==2.7.7
 python-dateutil==2.7.3
