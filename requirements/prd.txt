@@ -2,7 +2,7 @@ pip
 beautifulsoup4==4.6.0
 certifi==2018.4.16
 chardet==3.0.4
-Django==2.0.10
+Django==2.1.5
 django-modelcluster==4.3
 django-taggit==0.23.0
 django-timezone-field==2.1

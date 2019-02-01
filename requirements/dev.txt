@@ -1,6 +1,7 @@
 pip
-Django>=2.0,<2.1
+#Django>=2.0,<2.1
 # Django 2.1 require Postgres 9.4+ whereas Centos 7.5 provides 9.2
+Django==2.1.5
 wagtail>=2.4,<2.5
 psycopg2-binary
 -e /home/djm/linuxsoftware/ls.joyous
