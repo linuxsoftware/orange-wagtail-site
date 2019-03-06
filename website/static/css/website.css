@@ -85,18 +85,18 @@ h4 {
 }
 
 /*--Links----------------------------------------------------------------*/
-a, a:link     {
+a, a:link {
     color:                 #23345c;
     text-decoration:       none; 
 }
-a:visited  {  
+a:visited {
     color:                 #23345c;
 }
-a:hover    { 
+a:hover {
     color:                 #f76172;
     text-decoration:       underline; 
 }
-a:active   { 
+a:active {
     background-color:      #f76172;
     color:                 white; 
 }
@@ -461,18 +461,18 @@ form fieldset {
 a.inline-link,
 a.inline-link:link,
 .rich-text a,
-.rich-text a:link     {
+.rich-text a:link {
     text-decoration:       none; 
     border-bottom:         1px dashed rgba(85, 102, 119, 0.4);
 }
 a.inline-link:active,
-.rich-text a:active   { 
+.rich-text a:active {
     background-color:      #cc6600;
     color:                 white; 
     text-decoration:       underline; 
 }
 a.inline-link:hover,
-.rich-text a:hover    { 
+.rich-text a:hover {
     border-bottom:         none;
     text-decoration:       underline; 
 }
@@ -546,18 +546,18 @@ a.ticket:active h3 {
 .page-index a,
 .page-index a:link,
 .page-index a:hover,
-.page-index a:visited  {  
+.page-index a:visited {
     color: #cc6600;
-    text-decoration: none; 
+    text-decoration: none;
 }
-.page-index a:hover .item-heading  { 
+.page-index a:hover strong {
     color: #cc6600;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
-.page-index a:active .item-heading  { 
-    color:                 white; 
+.page-index a:active strong {
+    color:                 white;
     background-color:      #cc6600;
-    text-decoration:       underline; 
+    text-decoration:       underline;
 }
 
 .page-index .item {
@@ -566,7 +566,7 @@ a.ticket:active h3 {
     display:               block;
     min-height:            28px;
 }
-.page-index .item-heading {
+.page-index strong {
     display:               inline;
     font-weight:           bold;
     font-size:             18px;
@@ -577,21 +577,21 @@ a.ticket:active h3 {
 /* Event Index */
 /*-----------------------------------------------------------------------*/
 
-.event-index {
+.content .event-index {
     border-top:            1px solid #cc6600;
 }
-.event-index a,
-.event-index a:link,
-.event-index a:hover,
-.event-index a:active,
-.event-index a:visited  {
-    color: #cc6600;
+.content .event-index a,
+.content .event-index a:link,
+.content .event-index a:hover,
+.content .event-index a:active,
+.content .event-index a:visited {
+    color:                 #cc6600;
     background-color:      transparent;
 }
-.event-index a:hover .item-heading  {
-    color: #cc6600;
+.content .event-index a:hover strong {
+    color:                 #cc6600;
 }
-.event-index a:active .item-heading  {
+.content .event-index a:active strong {
     color:                 white;
     background-color:      #cc6600;
 }
