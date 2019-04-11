@@ -8,6 +8,7 @@ django-taggit==0.23.0
 django-timezone-field==2.1
 django-treebeard==4.3
 djangorestframework==3.8.2
+docopt==0.6.2
 draftjs-exporter==2.1.5
 holidays==0.9.5
 html5lib==1.0.1
@@ -15,9 +16,10 @@ icalendar==4.0.2
 idna==2.6
 inflect==0.3.1
 l18n==2016.6.4
-ls.joyous==0.8.0a1
+ls.joyous==0.8.0rc1
+num2words==0.5.9
 Pillow==5.1.0
-psycopg2-binary==2.7.7
+psycopg2-binary==2.8.1
 python-dateutil==2.7.3
 pytz==2018.4
 requests==2.18.4
