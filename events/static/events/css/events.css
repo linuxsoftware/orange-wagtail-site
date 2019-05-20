@@ -1,0 +1,90 @@
+/*-----------------------------------------------------------------------*/
+/* Events CSS */
+/*-----------------------------------------------------------------------*/
+
+/* color scheme
+ black    Black
+ white    White
+ #36454f  Charcoal
+ #c13100  Grenadier
+ #f76172  Brink
+ #f75855
+ #d74f4c
+ #3b000b  Temptress
+ #462222
+ #790000
+ #990000
+ #f4bc0c
+ #f3d73e
+ #00de97
+ #526c83
+ #4c564d
+ #558f9a
+ #4a90d9
+ #486c78
+ #5c6960
+ #738588
+ #a0aeb7
+ #d1d3d3
+ #d9dde0
+ #23345c  Regal
+ #192329
+ #00203a
+ #f1f4f8
+ */
+
+
+.welcome,
+.events {
+    margin:                0 auto;
+    padding:               60px 50px 40px 50px;
+    max-width:             1100px;
+    position:              relative;
+}
+.events {
+    min-height:            360px;
+}
+.joy-minical {
+    margin:                20px 10px 0px 0;
+    position:              relative;
+}
+.joy-minical thead tr th {
+    padding:               5px 0px;
+}
+.left-column,
+.right-column {
+    padding:               0px 10px;
+}
+.event-when,
+.event-next-on,
+.event-location {
+    font-size:             16px;
+}
+h2 {
+    padding:               0px 0px 10px 0px;
+}
+hr {
+     border:               0;
+     height:               0; 
+     border-top:           1px solid rgba(0, 0, 0, 0.1); 
+     border-bottom:        1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+@media (min-width:800px) {
+.left-column {
+    float:                 left;
+}
+.right-column {
+    margin-left:           330px;
+}
+.joy-minical {
+    position:              absolute;
+    top:                   100px;
+    left:                  50px;
+}
+}
