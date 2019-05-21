@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 from wagtail.core.models import Page
 from wagtail.core.fields import RichTextField
 from wagtail.admin.edit_handlers import FieldPanel
@@ -30,3 +31,10 @@ class TagsDemoPage(Page):
         FieldPanel('welcome', classname="full"),
         FieldPanel('content', classname="full"),
         ]
+
+    def get_context(self, request, *args, **kwargs):
+        retval = super().get_context(request, *args, **kwargs)
+        retval['themeCSS'] = getattr(settings, "JOYOUS_THEME_CSS", "")
+        return retval
+
+

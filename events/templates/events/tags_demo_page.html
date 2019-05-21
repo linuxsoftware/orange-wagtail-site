@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% extends "joyous/joyous_base.html" %}
 {% load static wagtailcore_tags wagtailimages_tags joyous_tags %}
 
 {% block extra_css %}
-  <link rel="stylesheet" type="text/css" href="{% static 'joyous/css/joyous.css' %}">
+  {{ block.super }}
   <link rel="stylesheet" type="text/css" href="{% static 'events/css/events.css' %}">
 {% endblock %}
 
