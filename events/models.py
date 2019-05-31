@@ -20,7 +20,6 @@ class DemoCalendarPage(CalendarPage):
 
     parent_page_types = ['home.HomePage']
 
-
 class TagsDemoPage(Page):
     welcome = RichTextField(default='', blank=True)
     welcome.help_text = "A welcome message"

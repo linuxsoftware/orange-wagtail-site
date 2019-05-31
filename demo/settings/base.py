@@ -152,10 +152,10 @@ BASE_URL = "http://demo.linuxsoftware.nz"
 
 ALLOWED_HOSTS = ["demo.linuxsoftware.nz", ".localhost", "127.0.0.1", "[::1]"]
 
-JOYOUS_HOLIDAYS = "NZ[*]"
+# JOYOUS_HOLIDAYS = "NZ[*]"
 JOYOUS_GROUP_SELECTABLE = True
 JOYOUS_TIME_INPUT = 12
-JOYOUS_THEME_CSS = "/static/joyous/css/joyous_coast_theme.css"
+JOYOUS_THEME_CSS = "/static/joyous/css/joyous_stellar_theme.css"
 
 from contextlib import suppress
 from django.utils.translation import get_language_info
