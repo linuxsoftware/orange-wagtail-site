@@ -14,7 +14,7 @@ holidays==0.9.10
 html5lib==1.0.1
 icalendar==4.0.3
 idna==2.8
-ls.joyous==0.9.0rc3
+ls.joyous==0.9.0rc4
 num2words==0.5.10
 Pillow==5.4.1
 psycopg2-binary==2.8.2
