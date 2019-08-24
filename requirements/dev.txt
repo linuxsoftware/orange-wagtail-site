@@ -1,6 +1,6 @@
 pip
 Django>=2.2,<2.3
-wagtail>=2.5,<2.6
+wagtail>=2.6,<2.7
 psycopg2-binary
 -e /home/djm/linuxsoftware/ls.joyous
 #-e git://github.com/linuxsoftware/ls.joyous.git#egg=ls.joyous
