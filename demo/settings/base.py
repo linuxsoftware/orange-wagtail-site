@@ -157,6 +157,10 @@ JOYOUS_GROUP_SELECTABLE = True
 JOYOUS_TIME_INPUT = 12
 JOYOUS_THEME_CSS = "/static/joyous/css/joyous_coast_theme.css"
 
+JOYOUS_DATE_FORMAT = "l jS \\o\\f F X"
+JOYOUS_DATE_SHORT_FORMAT = "j F Y"
+JOYOUS_TIME_FORMAT = "fq"
+
 from contextlib import suppress
 from django.utils.translation import get_language_info
 def _nameLocal(lang, name=""):
@@ -165,36 +169,11 @@ def _nameLocal(lang, name=""):
     return (lang, name)
 
 LANGUAGES = WAGTAILADMIN_PERMITTED_LANGUAGES = [
-    _nameLocal("ar",     "Arabic"),
-    _nameLocal("bn",     "Bengali"),
-    _nameLocal("zh-cn",  "Chinese (China)"),
-    _nameLocal("zh-tw",  "Chinese (Taiwan)"),
-    _nameLocal("nl-nl",  "Dutch"),
               ("en-au",  "English (Australia)"),
               ("en-nz",  "English (NZ)"),
               ("en-gb",  "English (UK)"),
               ("en",     "English (USA)"),
-    _nameLocal("eo",     "Esperanto"),
     _nameLocal("fr",     "French"),
     _nameLocal("de",     "German"),
     _nameLocal("el",     "Greek"),
-    _nameLocal("hi",     "Hindustani"),
-    _nameLocal("id",     "Indonesian"),
-    _nameLocal("it",     "Italian"),
-    _nameLocal("ja",     "Japanese"),
-    _nameLocal("ko",     "Korean"),
-    _nameLocal("nb",     "Norwegian Bokmål"),
-    _nameLocal("fa",     "Persian"),
-    _nameLocal("pl",     "Polish"),
-    _nameLocal("pt-br",  "Portuguese (Brazil)"),
-    _nameLocal("pt-pt",  "Portuguese (Portugal)"),
-    _nameLocal("ro",     "Romanian"),
-    _nameLocal("ru",     "Russian"),
-    _nameLocal("es",     "Spanish"),
-    _nameLocal("sw",     "Swahili"),
-    _nameLocal("sv",     "Swedish"),
-    _nameLocal("ta",     "Tamil"),
-    _nameLocal("tr",     "Turkish"),
-    _nameLocal("uk",     "Ukrainian"),
-    _nameLocal("vi",     "Vietnamese"),
 ]
