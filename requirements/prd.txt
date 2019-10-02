@@ -16,7 +16,7 @@ holidays==0.9.10
 html5lib==1.0.1
 icalendar==4.0.3
 idna==2.8
-ls.joyous==0.9.2rc1
+ls.joyous==0.9.2rc2
 lunardate==0.2.0
 lxml==4.3.4
 num2words==0.5.10
