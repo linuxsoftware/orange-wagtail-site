@@ -1,0 +1,5 @@
+{% extends "joyous/cancellation_page.html" %}
+{% block event_who %}
+{{ block.super }}
+<b>Organizer:</b>  {{ overrides.specific.organizer }}
+{% endblock event_who %}
