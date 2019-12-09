@@ -165,7 +165,7 @@ from contextlib import suppress
 from django.utils.translation import get_language_info
 def _nameLocal(lang, name=""):
     with suppress(KeyError):
-        name = get_language_info(lang)['name_local'].capitalize()
+        name = get_language_info(lang)['name_local'].title()
     return (lang, name)
 
 LANGUAGES = WAGTAILADMIN_PERMITTED_LANGUAGES = [
@@ -176,4 +176,5 @@ LANGUAGES = WAGTAILADMIN_PERMITTED_LANGUAGES = [
     _nameLocal("fr",     "French"),
     _nameLocal("de",     "German"),
     _nameLocal("el",     "Greek"),
+    _nameLocal("pt-br",  "Portuguese (Brazil)"),
 ]
