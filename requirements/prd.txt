@@ -2,7 +2,7 @@ pip
 beautifulsoup4==4.6.0
 certifi==2019.3.9
 chardet==3.0.4
-Django==2.2.8
+Django==2.2.9
 django-modelcluster==5.0
 django-taggit==1.2.0
 django-timezone-field==3.0
@@ -16,7 +16,7 @@ holidays==0.9.10
 html5lib==1.0.1
 icalendar==4.0.3
 idna==2.8
-ls.joyous==0.9.3rc1
+ls.joyous==0.9.4rc2
 lunardate==0.2.0
 lxml==4.3.4
 num2words==0.5.10
