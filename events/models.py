@@ -132,15 +132,6 @@ class DemoPostponementPage(PostponementPage):
         response.template_name = "events/demo_postponement_page_from.html"
         return response
 
-@receiver(init_new_page)
-def copyOrganizer(sender, **kwargs):
-    page = kwargs.get('page')
-    parent = kwargs.get('parent')
-    if (isinstance(page, DemoPostponementPage) and
-        isinstance(parent, DemoRecurringEventPage) and
-        not page.organizer):
-        page.organizer = parent.organizer
-
 class DemoRescheduleMultidayEventPage(ProxyPageMixin, DemoPostponementPage):
     template = "events/demo_postponement_page.html"
     parent_page_types = ["events.DemoMultidayRecurringEventPage"]
