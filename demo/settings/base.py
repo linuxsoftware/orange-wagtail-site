@@ -155,7 +155,7 @@ ALLOWED_HOSTS = ["demo.linuxsoftware.nz", ".localhost", "127.0.0.1", "[::1]"]
 JOYOUS_HOLIDAYS = "NZ[*]"
 JOYOUS_GROUP_SELECTABLE = True
 JOYOUS_TIME_INPUT = 12
-JOYOUS_THEME_CSS = "//xlocalhost:8220/static/joyous/css/joyous_coast_theme.css"
+JOYOUS_THEME_CSS = "/static/joyous/css/joyous_coast_theme.css"
 
 JOYOUS_DATE_FORMAT = "l jS \\o\\f F X"
 JOYOUS_DATE_SHORT_FORMAT = "j F Y"
