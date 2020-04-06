@@ -19,7 +19,7 @@ icalendar==4.0.5
 idna==2.9
 jplephem==2.12
 l18n==2018.5
-ls.joyous==1.0.1rc1
+ls.joyous==1.0.1rc2
 lunardate==0.2.0
 lxml==4.5.0
 num2words==0.5.10
