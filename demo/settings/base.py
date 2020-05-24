@@ -176,5 +176,7 @@ LANGUAGES = WAGTAILADMIN_PERMITTED_LANGUAGES = [
     _nameLocal("fr",     "French"),
     _nameLocal("de",     "German"),
     _nameLocal("el",     "Greek"),
+    _nameLocal("it",     "Italian"),
+    _nameLocal("ja",     "Japanese"),
     _nameLocal("pt-br",  "Portuguese (Brazil)"),
 ]
