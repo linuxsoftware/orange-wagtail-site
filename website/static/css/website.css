@@ -427,6 +427,7 @@ form fieldset {
 #main {
     position:              relative;
 }
+.joy-content,
 .content {
     padding:               40px 10%; /* 7.5% ? */
     margin:                0px;

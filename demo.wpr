@@ -63,6 +63,18 @@ proj.directory-list = [{'dirloc': loc('dashboard'),
                         'filter': '*',
                         'include_hidden': False,
                         'recursive': True,
+                        'watch_for_changes': True},
+                       {'dirloc': loc('../ls.joyful/ls/joyful'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True},
+                       {'dirloc': loc('../../env/orange37/site-packages/wagtail'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
                         'watch_for_changes': True}]
 proj.file-list = [loc('manage.py')]
 proj.file-type = 'shared'

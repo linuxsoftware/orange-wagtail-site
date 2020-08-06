@@ -1,5 +1,6 @@
 pip
-wagtail>=2.9,<2.10
+wagtail>=2.9,<2.11
 psycopg2-binary
 -e /home/djm/linuxsoftware/ls.joyous
+-e /home/djm/linuxsoftware/ls.joyful
 #-e git://github.com/linuxsoftware/ls.joyous.git#egg=ls.joyous

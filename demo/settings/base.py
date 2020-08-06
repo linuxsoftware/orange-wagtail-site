@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     "dashboard",
 
     "ls.joyous",
+    "ls.joyful",
     "wagtail.contrib.modeladmin",
     "wagtail.contrib.postgres_search",
 
