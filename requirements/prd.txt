@@ -20,7 +20,8 @@ idna==2.10
 jplephem==2.12
 korean-lunar-calendar==0.2.1
 l18n==2018.5
-ls.joyous==1.2.0rc3
+ls.joyful==0.1.0
+ls.joyous==1.2.0
 lunardate==0.2.0
 lxml==4.5.2
 num2words==0.5.10
@@ -41,7 +42,7 @@ soupsieve==2.0.1
 sqlparse==0.3.1
 Unidecode==1.1.1
 urllib3==1.25.9
-wagtail==2.9.2
+wagtail==2.9.3
 wagtailgmaps==1.0.1
 webencodings==0.5.1
 Willow==1.3
