@@ -24,7 +24,7 @@ jplephem==2.12
 korean-lunar-calendar==0.2.1
 l18n==2018.5
 ls.joyful==0.1.2
-ls.joyous==1.3.0rc5
+ls.joyous==1.3.1rc5
 lunardate==0.2.0
 lxml==4.5.2
 num2words==0.5.10
