@@ -69,7 +69,6 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.security.SecurityMiddleware",
 
-    "wagtail.core.middleware.SiteMiddleware",
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
 
     "ls.joyous.middleware.UserTimeZoneMiddleware",
@@ -180,4 +179,5 @@ LANGUAGES = WAGTAILADMIN_PERMITTED_LANGUAGES = [
     _nameLocal("it",     "Italian"),
     _nameLocal("ja",     "Japanese"),
     _nameLocal("pt-br",  "Portuguese (Brazil)"),
+    _nameLocal("sv",     "Swedish"),
 ]
