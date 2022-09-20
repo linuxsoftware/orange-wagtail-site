@@ -48,7 +48,7 @@ soupsieve==2.1
 sqlparse==0.4.1
 tablib==3.0.0
 Unidecode==1.2.0
-urllib3==1.26.3
+urllib3==1.26.5
 wagtail==2.12
 wagtailgmaps==1.0.1
 webencodings==0.5.1
