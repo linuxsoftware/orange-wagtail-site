@@ -32,7 +32,7 @@ lxml==4.6.2
 num2words==0.5.10
 numpy==1.18.1
 openpyxl==3.0.6
-Pillow==8.1.0
+Pillow==9.3.0
 psycopg2-binary==2.8.6
 pyCalverter==1.6.1
 pyluach==1.0.1
